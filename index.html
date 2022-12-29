@@ -5,8 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SCSS LAYOUT</title>
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./scss/reset.scss">
+  <link rel="stylesheet" href="./scss/main.scss">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -52,16 +53,20 @@
         <h3>SHOP</h3>
         <div class="btn">
           <p class="a">SHOWING <b>1</b>–<b>12</b> OF <b>100</b>RESULTS</p>
-          
-          <ul>
-            <li>DEFAULT SORTING</li>
-            <li>Sor01</li>
-            <li>Sor02</li>
-            <li>Sor03</li>
-            <li>Sor04</li>
-            <li>Sor05</li>
-          </ul>
-          
+          <div>
+            <!-- select 숨겨져 있다. 
+                 form -> 값 전송 
+            -->
+            <p>DEFAULT SORTING <i class="fa-solid fa-angle-down"></i></p>
+            <ul>
+              <li>DEFAULT SORTING</li>
+              <li>Sor01</li>
+              <li>Sor02</li>
+              <li>Sor03</li>
+              <li>Sor04</li>
+              <li>Sor05</li>
+            </ul>
+          </div>
           <!-- input>datalist -->
           <!-- select -->
         </div>
@@ -72,11 +77,13 @@
             <figcaption>
               <dl>
                 <dt class="title">HANDMADE FLARED JACKET</dt>
-                <dd class="pirce"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
+                <dd class="price"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
                 <dd class="btn">
                   <button type="button" class="add">ADD TO CART</button>
+                  <div>
                   <button type="button" class="link"><i class="fa-solid fa-repeat"></i></button>
-                  <button type="button" class="즐겨찾기"><i class="fa-regular fa-heart"></i></button>
+                  <button type="button" class="fav"><i class="fa-regular fa-heart"></i></button>
+                </div>
                 </dd>
                 <dd class="label">
                   <b>-25%</b>
@@ -90,11 +97,13 @@
             <figcaption>
               <dl>
                 <dt class="title">HANDMADE FLARED JACKET</dt>
-                <dd class="pirce"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
+                <dd class="price"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
                 <dd class="btn">
                   <button type="button" class="add">ADD TO CART</button>
+                  <div>
                   <button type="button" class="link"><i class="fa-solid fa-repeat"></i></button>
-                  <button type="button" class="즐겨찾기"><i class="fa-regular fa-heart"></i></button>
+                  <button type="button" class="fav"><i class="fa-regular fa-heart"></i></button>
+                  </div>
                 </dd>
                 <dd class="label">
                   <b>-25%</b>
@@ -108,11 +117,13 @@
             <figcaption>
               <dl>
                 <dt class="title">HANDMADE FLARED JACKET</dt>
-                <dd class="pirce"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
-                <dd class="btn">
+                <dd class="price"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
+                 <dd class="btn">
                   <button type="button" class="add">ADD TO CART</button>
+                  <div>
                   <button type="button" class="link"><i class="fa-solid fa-repeat"></i></button>
-                  <button type="button" class="즐겨찾기"><i class="fa-regular fa-heart"></i></button>
+                  <button type="button" class="fav"><i class="fa-regular fa-heart"></i></button>
+                </div>
                 </dd>
                 <dd class="label">
                   <b>-25%</b>
@@ -126,11 +137,13 @@
             <figcaption>
               <dl>
                 <dt class="title">HANDMADE FLARED JACKET</dt>
-                <dd class="pirce"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
-                <dd class="btn">
+                <dd class="price"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
+                 <dd class="btn">
                   <button type="button" class="add">ADD TO CART</button>
+                  <div>
                   <button type="button" class="link"><i class="fa-solid fa-repeat"></i></button>
-                  <button type="button" class="즐겨찾기"><i class="fa-regular fa-heart"></i></button>
+                  <button type="button" class="fav"><i class="fa-regular fa-heart"></i></button>
+                </div>
                 </dd>
                 <dd class="label">
                   <b>-25%</b>
@@ -144,11 +157,13 @@
             <figcaption>
               <dl>
                 <dt class="title">HANDMADE FLARED JACKET</dt>
-                <dd class="pirce"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
-                <dd class="btn">
+                <dd class="price"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
+                 <dd class="btn">
                   <button type="button" class="add">ADD TO CART</button>
+                  <div>
                   <button type="button" class="link"><i class="fa-solid fa-repeat"></i></button>
-                  <button type="button" class="즐겨찾기"><i class="fa-regular fa-heart"></i></button>
+                  <button type="button" class="fav"><i class="fa-regular fa-heart"></i></button>
+                </div>
                 </dd>
                 <dd class="label">
                   <b>-25%</b>
@@ -162,11 +177,13 @@
             <figcaption>
               <dl>
                 <dt class="title">HANDMADE FLARED JACKET</dt>
-                <dd class="pirce"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
-                <dd class="btn">
+                <dd class="price"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
+                 <dd class="btn">
                   <button type="button" class="add">ADD TO CART</button>
+                  <div>
                   <button type="button" class="link"><i class="fa-solid fa-repeat"></i></button>
-                  <button type="button" class="즐겨찾기"><i class="fa-regular fa-heart"></i></button>
+                  <button type="button" class="fav"><i class="fa-regular fa-heart"></i></button>
+                </div>
                 </dd>
                 <dd class="label">
                   <b>-25%</b>
@@ -180,11 +197,13 @@
             <figcaption>
               <dl>
                 <dt class="title">HANDMADE FLARED JACKET</dt>
-                <dd class="pirce"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
-                <dd class="btn">
+                <dd class="price"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
+                 <dd class="btn">
                   <button type="button" class="add">ADD TO CART</button>
+                  <div>
                   <button type="button" class="link"><i class="fa-solid fa-repeat"></i></button>
-                  <button type="button" class="즐겨찾기"><i class="fa-regular fa-heart"></i></button>
+                  <button type="button" class="fav"><i class="fa-regular fa-heart"></i></button>
+                </div>
                 </dd>
                 <dd class="label">
                   <b>-25%</b>
@@ -198,11 +217,13 @@
             <figcaption>
               <dl>
                 <dt class="title">HANDMADE FLARED JACKET</dt>
-                <dd class="pirce"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
-                <dd class="btn">
+                <dd class="price"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
+                 <dd class="btn">
                   <button type="button" class="add">ADD TO CART</button>
+                  <div>
                   <button type="button" class="link"><i class="fa-solid fa-repeat"></i></button>
-                  <button type="button" class="즐겨찾기"><i class="fa-regular fa-heart"></i></button>
+                  <button type="button" class="fav"><i class="fa-regular fa-heart"></i></button>
+                </div>
                 </dd>
                 <dd class="label">
                   <b>-25%</b>
@@ -216,11 +237,13 @@
             <figcaption>
               <dl>
                 <dt class="title">HANDMADE FLARED JACKET</dt>
-                <dd class="pirce"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
-                <dd class="btn">
+                <dd class="price"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
+                 <dd class="btn">
                   <button type="button" class="add">ADD TO CART</button>
+                  <div>
                   <button type="button" class="link"><i class="fa-solid fa-repeat"></i></button>
-                  <button type="button" class="즐겨찾기"><i class="fa-regular fa-heart"></i></button>
+                  <button type="button" class="fav"><i class="fa-regular fa-heart"></i></button>
+                </div>
                 </dd>
                 <dd class="label">
                   <b>-25%</b>
@@ -234,11 +257,11 @@
             <figcaption>
               <dl>
                 <dt class="title">HANDMADE FLARED JACKET</dt>
-                <dd class="pirce"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
+                <dd class="price"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
                 <dd class="btn">
                   <button type="button" class="add">ADD TO CART</button>
                    <button type="button" class="link"><i class="fa-solid fa-repeat"></i></button>
-                  <button type="button" class="즐겨찾기"><i class="fa-regular fa-heart"></i></button>
+                  <button type="button" class="fav"><i class="fa-regular fa-heart"></i></button>
                 </dd>
                 <dd class="label">
                   <b>-25%</b>
@@ -252,11 +275,13 @@
             <figcaption>
               <dl>
                 <dt class="title">HANDMADE FLARED JACKET</dt>
-                <dd class="pirce"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
-                <dd class="btn">
+                <dd class="price"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
+                 <dd class="btn">
                   <button type="button" class="add">ADD TO CART</button>
+                  <div>
                   <button type="button" class="link"><i class="fa-solid fa-repeat"></i></button>
-                  <button type="button" class="즐겨찾기"><i class="fa-regular fa-heart"></i></button>
+                  <button type="button" class="fav"><i class="fa-regular fa-heart"></i></button>
+                </div>
                 </dd>
                 <dd class="label">
                   <b>-25%</b>
@@ -270,11 +295,13 @@
             <figcaption>
               <dl>
                 <dt class="title">HANDMADE FLARED JACKET</dt>
-                <dd class="pirce"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
-                <dd class="btn">
+                <dd class="price"><ins>189.99 USD</ins> <del>230.99 USD</del></dd>
+                 <dd class="btn">
                   <button type="button" class="add">ADD TO CART</button>
+                  <div>
                   <button type="button" class="link"><i class="fa-solid fa-repeat"></i></button>
-                  <button type="button" class="즐겨찾기"><i class="fa-regular fa-heart"></i></button>
+                  <button type="button" class="fav"><i class="fa-regular fa-heart"></i></button>
+                </div>
                 </dd>
                 <dd class="label">
                   <b>-25%</b>
@@ -289,7 +316,9 @@
       <!-- aside -->
       <aside>
         <dl>
-          <dt></dt>
+          <dt>
+            <span>LOCATION</span>
+          </dt>
           <dd>
             <address>580, BROADWAY, 10012 - NEW YORK
               NY - U</address>
